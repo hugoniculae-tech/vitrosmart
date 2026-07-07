@@ -52,7 +52,7 @@ a{color:inherit}
 .display{font-family:'Fraunces',serif;font-weight:400;font-variant-ligatures:none}
 h1,h2,h3,.h1,.h2,.h3{font-family:'Fraunces',serif;font-weight:400;line-height:1.12;font-variant-ligatures:none}
 .logo,.f-logo,.amt,.price-amount,.warr-num,.step-n,.price-name{font-variant-ligatures:none}
-h1 i,h2 i,h3 i,.h1 i,.h2 i,.h3 i{font-style:italic;color:var(--accent2)}
+h1 i,h2 i,h3 i,.h1 i,.h2 i,.h3 i{font-style:normal;color:var(--accent2)}
 .eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent2);font-weight:600;margin-bottom:14px;display:block}
 .eyebrow.on-dark{color:var(--accent)}
 .lede{font-size:16px;line-height:1.85;color:var(--muted);font-weight:400}
