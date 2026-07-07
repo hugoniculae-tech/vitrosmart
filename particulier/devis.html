@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devis gratuit film intelligent PDLC | Vitro Smart</title>
+<meta name="description" content="Demandez votre devis gratuit pour la pose d'un film intelligent PDLC. Réponse sous 24h, visite technique offerte, sans engagement.">
+<link rel="canonical" href="https://www.vitrosmart.fr/particulier/devis.html">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,340;9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+  .devis-layout{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;align-items:start}
+  .devis-side .tag-row{margin-top:28px}
+  .c-alt{display:flex;align-items:center;gap:14px;margin:28px 0 20px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .c-alt-line{flex:1;height:1px;background:rgba(12,22,32,0.1)}
+  .wa-link{display:inline-flex;align-items:center;gap:12px;padding:14px 24px;border:1px solid rgba(12,22,32,0.12);background:#fff;text-decoration:none;color:var(--ink);font-size:14px;border-radius:2px}
+  .wa-link:hover{border-color:var(--accent2)}
+  .wa-dot{width:7px;height:7px;border-radius:50%;background:#25D366;flex-shrink:0}
+  .c-email{margin-top:14px;font-size:13px;color:var(--muted)}
+  .c-email a{color:var(--accent2);text-decoration:none}
+  @media(max-width:900px){.devis-layout{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="logo" href="/">Vitro<em>Smart</em></a>
+  <ul class="nav-links">
+    <li><a href="/particulier/devis.html" class="is-active">Devis gratuit</a></li>
+    <li><a href="/particulier/realisations.html">Réalisations</a></li>
+    <li><a href="/particulier/garanties.html">Garanties</a></li>
+    <li><a href="/particulier/tarifs.html">Tarifs</a></li>
+  </ul>
+  <div class="nav-switch">
+    <a class="nav-universe-tag" href="/professionnel/">Espace pro →</a>
+    <a class="nav-cta" href="/particulier/devis.html">Devis gratuit</a>
+  </div>
+</nav>
+
+<p class="crumb"><a href="/">Accueil</a> / <a href="/particulier/">Particuliers</a> / Devis gratuit</p>
+
+<section class="section-tight bg-white">
+  <div class="wrap">
+    <div class="devis-layout">
+      <div class="devis-side">
+        <p class="eyebrow">Devis gratuit</p>
+        <h1 class="sec-title">Parlons de<br><i>votre projet.</i></h1>
+        <p class="lede">Décrivez-nous vos surfaces et vos contraintes : un technicien Vitro Smart vous recontacte sous 24h ouvrées avec une estimation détaillée. La visite technique de mesure est offerte.</p>
+        <div class="tag-row">
+          <span class="tag">Réponse &lt; 24h</span>
+          <span class="tag">Visite technique offerte</span>
+          <span class="tag">Sans engagement</span>
+        </div>
+
+        <div class="c-alt"><span class="c-alt-line"></span><span>ou contactez-nous directement</span><span class="c-alt-line"></span></div>
+        <a class="wa-link" href="https://wa.me/33788834771" target="_blank" rel="noopener"><div class="wa-dot"></div>+33 7 88 83 47 71 — WhatsApp</a>
+        <p class="c-email">Email : <a href="mailto:contact@vitrosmart.fr">contact@vitrosmart.fr</a></p>
+      </div>
+
+      <div>
+        <form name="devis" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-ajax data-success-target="devis-success" id="devis-form" class="site-form">
+          <input type="hidden" name="form-name" value="devis">
+          <p hidden><label>Ne pas remplir si vous êtes humain : <input name="bot-field"></label></p>
+
+          <div class="f-row">
+            <div class="f-field">
+              <label for="df-nom">Nom / Prénom</label>
+              <input type="text" id="df-nom" name="nom" required>
+            </div>
+            <div class="f-field">
+              <label for="df-tel">Téléphone</label>
+              <input type="tel" id="df-tel" name="telephone" required>
+            </div>
+          </div>
+
+          <div class="f-row">
+            <div class="f-field">
+              <label for="df-email">Email</label>
+              <input type="email" id="df-email" name="email" required>
+            </div>
+            <div class="f-field">
+              <label for="df-type">Type de projet</label>
+              <select id="df-type" name="type_projet" required>
+                <option value="" disabled selected>Sélectionnez…</option>
+                <option value="Résidentiel">Résidentiel</option>
+                <option value="Professionnel">Professionnel</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="f-row">
+            <div class="f-field">
+              <label for="df-surface">Surface estimée (m²)</label>
+              <input type="text" id="df-surface" name="surface" placeholder="Ex : 4 m²">
+            </div>
+            <div class="f-field">
+              <label for="df-delai">Délai souhaité</label>
+              <select id="df-delai" name="delai">
+                <option value="Dès que possible">Dès que possible</option>
+                <option value="Sous 1 mois">Sous 1 mois</option>
+                <option value="Sous 3 mois">Sous 3 mois</option>
+                <option value="Simple étude">Simple étude, pas de délai précis</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="f-row">
+            <div class="f-field full">
+              <label for="df-msg">Message / description du projet</label>
+              <textarea id="df-msg" name="message" placeholder="Décrivez votre projet : surfaces à traiter, dimensions, contraintes, délai souhaité…"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Demander mon devis</button>
+        </form>
+        <p id="devis-success" class="form-success" hidden>Merci ! Votre demande a bien été envoyée — un technicien Vitro Smart vous recontacte sous 24h.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-bone">
+  <div class="wrap-nrw">
+    <p class="eyebrow center">Questions fréquentes</p>
+    <h2 class="sec-title center mb-32">Avant de <i>vous décider.</i></h2>
+    <div class="faq">
+      <details open>
+        <summary>Le devis est-il vraiment gratuit et sans engagement ?</summary>
+        <p>Oui. La visite technique, la prise de mesures et le chiffrage détaillé sont offerts, que vous donniez suite ou non.</p>
+      </details>
+      <details>
+        <summary>Combien de temps pour recevoir une réponse ?</summary>
+        <p>Nous revenons vers vous sous 24h ouvrées pour planifier une visite ou affiner votre besoin par téléphone.</p>
+      </details>
+      <details>
+        <summary>Faut-il changer mes vitrages existants ?</summary>
+        <p>Non, dans la grande majorité des cas le film se pose directement sur vos vitrages en place. Nos techniciens valident la faisabilité lors de la visite.</p>
+      </details>
+      <details>
+        <summary>Intervenez-vous partout en France ?</summary>
+        <p>Nos équipes interviennent sur l'ensemble du territoire pour les projets professionnels ; pour les particuliers, précisez votre code postal dans le message, nous vous confirmerons la faisabilité.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="f-logo" href="/">Vitro<em>Smart</em></a>
+        <p class="f-baseline">Fabricant et poseur français de films intelligents PDLC. Découpe sur-mesure au m² près, pose par nos techniciens certifiés.</p>
+      </div>
+      <div class="f-col">
+        <p class="f-col-t">Particuliers</p>
+        <a href="/particulier/devis.html">Devis gratuit</a>
+        <a href="/particulier/realisations.html">Réalisations</a>
+        <a href="/particulier/garanties.html">Garanties</a>
+        <a href="/particulier/tarifs.html">Tarifs</a>
+      </div>
+      <div class="f-col">
+        <p class="f-col-t">Professionnels</p>
+        <a href="/professionnel/achat-rouleaux.html">Achat de rouleaux</a>
+        <a href="/professionnel/tarifs-distributeur.html">Tarifs distributeur</a>
+        <a href="/professionnel/documentation.html">Documentation</a>
+        <a href="/professionnel/echantillons.html">Échantillons</a>
+        <a href="/professionnel/devenir-partenaire.html">Devenir partenaire</a>
+      </div>
+      <div class="f-col">
+        <p class="f-col-t">Contact</p>
+        <a href="mailto:contact@vitrosmart.fr">contact@vitrosmart.fr</a>
+        <a href="https://wa.me/33788834771" target="_blank" rel="noopener">+33 7 88 83 47 71</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <p class="f-copy">© 2026 Vitro Smart — Tous droits réservés</p>
+      <p class="f-copy">Fabriqué &amp; posé en France</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

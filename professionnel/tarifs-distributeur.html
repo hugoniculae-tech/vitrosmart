@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarifs distributeur film PDLC | Vitro Smart</title>
+<meta name="description" content="Grille tarifaire dégressive par paliers de volume pour les distributeurs et revendeurs de film intelligent PDLC Vitro Smart. Demandez votre accès.">
+<link rel="canonical" href="https://www.vitrosmart.fr/professionnel/tarifs-distributeur.html">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,340;9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+  .tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .tier-card{background:var(--ink-soft);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:30px;color:#fff}
+  .tier-card b{display:block;font-family:'Fraunces',serif;font-size:26px;font-weight:340;margin-bottom:8px;color:var(--silver-lt)}
+  .tier-card span{font-size:12.5px;color:rgba(255,255,255,0.5);line-height:1.7}
+  .gate{max-width:640px;margin:0 auto}
+  @media(max-width:900px){.tier-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="site-nav dark">
+  <a class="logo" href="/">Vitro<em>Smart</em></a>
+  <ul class="nav-links">
+    <li><a href="/professionnel/achat-rouleaux.html">Achat de rouleaux</a></li>
+    <li><a href="/professionnel/tarifs-distributeur.html" class="is-active">Tarifs distributeur</a></li>
+    <li><a href="/professionnel/documentation.html">Documentation</a></li>
+    <li><a href="/professionnel/echantillons.html">Échantillons</a></li>
+    <li><a href="/professionnel/devenir-partenaire.html">Devenir partenaire</a></li>
+  </ul>
+  <div class="nav-switch">
+    <a class="nav-universe-tag" href="/particulier/">Espace particulier →</a>
+    <a class="nav-cta" href="/professionnel/devenir-partenaire.html">Devenir partenaire</a>
+  </div>
+</nav>
+
+<p class="crumb" style="color:rgba(255,255,255,0.35);background:var(--ink)"><a href="/" style="color:rgba(255,255,255,0.35)">Accueil</a> / <a href="/professionnel/" style="color:rgba(255,255,255,0.35)">Professionnels</a> / Tarifs distributeur</p>
+
+<section class="section-tight bg-ink">
+  <div class="wrap-nrw center">
+    <p class="eyebrow on-dark">Tarifs distributeur</p>
+    <h1 class="sec-title">Une grille <i>dégressive par volume.</i></h1>
+    <p class="lede">Nos tarifs professionnels dépendent du volume annuel engagé et du type de structure (vitrier, agenceur, revendeur). La grille complète est communiquée après une courte qualification.</p>
+  </div>
+</section>
+
+<section class="bg-ink" style="padding-top:0">
+  <div class="wrap">
+    <div class="tier-grid">
+      <div class="tier-card">
+        <b>Palier 1</b>
+        <span>1 à 50 m² / an — remise de base sur nos tarifs catalogue</span>
+      </div>
+      <div class="tier-card">
+        <b>Palier 2</b>
+        <span>51 à 200 m² / an — remise intermédiaire et accès prioritaire aux délais de découpe</span>
+      </div>
+      <div class="tier-card">
+        <b>Palier 3</b>
+        <span>200 m² / an et + — tarif négocié, engagement annuel, référencement en tant que partenaire privilégié</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-bone">
+  <div class="wrap gate">
+    <p class="eyebrow center">Demande d'accès</p>
+    <h2 class="sec-title center mb-32">Recevez notre <i>grille tarifaire.</i></h2>
+    <form name="tarifs-distributeur" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-ajax data-success-target="tarif-success" id="tarif-form" class="site-form">
+      <input type="hidden" name="form-name" value="tarifs-distributeur">
+      <p hidden><label>Ne pas remplir si vous êtes humain : <input name="bot-field"></label></p>
+
+      <div class="f-row">
+        <div class="f-field">
+          <label for="t-societe">Société</label>
+          <input type="text" id="t-societe" name="societe" required>
+        </div>
+        <div class="f-field">
+          <label for="t-siret">SIRET</label>
+          <input type="text" id="t-siret" name="siret">
+        </div>
+      </div>
+      <div class="f-row">
+        <div class="f-field">
+          <label for="t-nom">Nom / Prénom</label>
+          <input type="text" id="t-nom" name="nom" required>
+        </div>
+        <div class="f-field">
+          <label for="t-fonction">Fonction</label>
+          <input type="text" id="t-fonction" name="fonction">
+        </div>
+      </div>
+      <div class="f-row">
+        <div class="f-field">
+          <label for="t-email">Email professionnel</label>
+          <input type="email" id="t-email" name="email" required>
+        </div>
+        <div class="f-field">
+          <label for="t-tel">Téléphone</label>
+          <input type="tel" id="t-tel" name="telephone" required>
+        </div>
+      </div>
+      <div class="f-row">
+        <div class="f-field full">
+          <label for="t-volume">Volume annuel estimé (m²)</label>
+          <select id="t-volume" name="volume_annuel">
+            <option value="1-50 m²">1 à 50 m² / an</option>
+            <option value="51-200 m²">51 à 200 m² / an</option>
+            <option value="200+ m²">200 m² / an et plus</option>
+            <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block btn-lg">Recevoir la grille tarifaire</button>
+    </form>
+    <p id="tarif-success" class="form-success" hidden>Merci ! Votre demande est en cours de qualification, notre équipe commerciale vous recontacte sous 24 à 48h ouvrées avec la grille tarifaire.</p>
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="wrap-nrw">
+    <p class="eyebrow center">Questions fréquentes</p>
+    <h2 class="sec-title center mb-32">Devenir <i>distributeur.</i></h2>
+    <div class="faq">
+      <details open>
+        <summary>Pourquoi les tarifs ne sont-ils pas publics ?</summary>
+        <p>Nos remises dépendent du volume engagé et du type de partenariat ; nous préférons qualifier chaque demande pour proposer la grille la plus adaptée à votre structure.</p>
+      </details>
+      <details>
+        <summary>Y a-t-il un engagement de volume minimum ?</summary>
+        <p>Non pour le palier 1. Les paliers 2 et 3 supposent un volume annuel engagé, discuté ensemble lors de l'échange commercial.</p>
+      </details>
+      <details>
+        <summary>Puis-je aussi commander des échantillons avant de m'engager ?</summary>
+        <p>Oui, c'est même recommandé — voir notre page <a href="/professionnel/echantillons.html">Échantillons</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a class="f-logo" href="/">Vitro<em>Smart</em></a>
+        <p class="f-baseline">Fabricant et poseur français de films intelligents PDLC. Découpe sur-mesure au m² près, pose par nos techniciens certifiés.</p>
+      </div>
+      <div class="f-col">
+        <p class="f-col-t">Particuliers</p>
+        <a href="/particulier/devis.html">Devis gratuit</a>
+        <a href="/particulier/realisations.html">Réalisations</a>
+        <a href="/particulier/garanties.html">Garanties</a>
+        <a href="/particulier/tarifs.html">Tarifs</a>
+      </div>
+      <div class="f-col">
+        <p class="f-col-t">Professionnels</p>
+        <a href="/professionnel/achat-rouleaux.html">Achat de rouleaux</a>
+        <a href="/professionnel/tarifs-distributeur.html">Tarifs distributeur</a>
+        <a href="/professionnel/documentation.html">Documentation</a>
+        <a href="/professionnel/echantillons.html">Échantillons</a>
+        <a href="/professionnel/devenir-partenaire.html">Devenir partenaire</a>
+      </div>
+      <div class="f-col">
+        <p class="f-col-t">Contact</p>
+        <a href="mailto:contact@vitrosmart.fr">contact@vitrosmart.fr</a>
+        <a href="https://wa.me/33788834771" target="_blank" rel="noopener">+33 7 88 83 47 71</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <p class="f-copy">© 2026 Vitro Smart — Tous droits réservés</p>
+      <p class="f-copy">Fabriqué &amp; posé en France</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
