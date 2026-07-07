@@ -42,6 +42,31 @@ document.querySelectorAll('.vi-toggle').forEach(function(btn){
   });
 });
 
+// Robust autoplay for mobile: some mobile browsers ignore the autoplay
+// attribute (data saver, delayed engagement, etc.) even when muted +
+// playsinline are set. Force-start playback once each video is actually
+// visible, and pause it when scrolled away to save battery/data.
+document.querySelectorAll('video[autoplay]').forEach(function(video){
+  video.muted = true;
+  video.setAttribute('muted', '');
+  var tryPlay = function(){ var p = video.play(); if(p && p.catch) p.catch(function(){}); };
+
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting) tryPlay();
+        else video.pause();
+      });
+    }, {threshold: 0.35});
+    io.observe(video);
+  } else {
+    tryPlay();
+  }
+
+  video.addEventListener('loadedmetadata', tryPlay);
+  document.addEventListener('touchstart', tryPlay, {once: true, passive: true});
+});
+
 document.querySelectorAll('form[data-netlify-ajax]').forEach(function(form){
   form.addEventListener('submit', function(e){
     e.preventDefault();
