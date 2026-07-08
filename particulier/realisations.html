@@ -26,6 +26,7 @@
   .case-meta div{font-size:12px;color:var(--muted-lt)}
   .case-meta b{display:block;color:var(--ink);font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:500}
   .case-video{position:relative;width:100%;aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;background:var(--ink)}
+  .case-video.is-landscape{aspect-ratio:1042/654}
   .case-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .case-video-badge{position:absolute;top:14px;left:14px;display:flex;align-items:center;gap:8px;padding:7px 14px;background:rgba(12,22,32,0.55);backdrop-filter:blur(6px);border-radius:20px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#fff;font-weight:700;z-index:2}
   .case-video-badge .dot{width:6px;height:6px;border-radius:50%;background:#e0455c;animation:pulse-dot 1.6s ease-in-out infinite}
@@ -82,9 +83,13 @@
     </div>
 
     <div class="case">
-      <div class="slider-wrap">
-        <div class="sl-before" style="background-image:url(/assets/img/cabinet-medical.jpg)"></div>
-        <div class="sl-after" style="background-image:url(/assets/img/cabinet-medical.jpg)"></div>
+      <div class="slider-wrap is-landscape">
+        <div class="sl-before" style="background-image:url(/assets/img/cabinet-medical.jpg)">
+          <div class="sl-state sl-state-l"><b>ON</b><span>Vitrage transparent</span></div>
+        </div>
+        <div class="sl-after" style="background-image:url(/assets/img/cabinet-medical.jpg)">
+          <div class="sl-state sl-state-r"><b>OFF</b><span>Vitrage opaque</span></div>
+        </div>
         <div class="sl-line"></div>
         <span class="sl-tag sl-l">Transparent</span><span class="sl-tag sl-r">Opaque</span>
       </div>
@@ -142,7 +147,7 @@
     </div>
 
     <div class="case">
-      <div class="case-video">
+      <div class="case-video is-landscape">
         <video id="case-vid-2" src="/assets/video/demo-salle-de-bain.mp4" poster="/assets/video/poster-salle-de-bain.jpg" autoplay muted loop playsinline preload="metadata"></video>
         <span class="case-video-badge"><span class="dot"></span>Vidéo réelle</span>
         <button class="vi-toggle" type="button" aria-label="Mettre en pause la vidéo">⏸</button>
