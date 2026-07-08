@@ -206,6 +206,32 @@ section{padding:96px 56px}
 /* ---------- Video toggle button (reused across immersive video blocks) ---------- */
 .vi-toggle{position:absolute;top:24px;right:24px;width:44px;height:44px;border-radius:50%;background:rgba(12,22,32,0.5);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.25);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;z-index:2}
 
+/* ---------- PDLC technology explainer (reused on /particulier/ & /professionnel/) ---------- */
+.pdlc-head{max-width:640px;margin:0 auto 52px;text-align:center}
+.pdlc-cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:56px}
+.pdlc-col{background:var(--ink-soft);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:32px;text-align:center}
+.pdlc-col-t{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,0.45);margin-bottom:22px}
+.pdlc-diagram{width:100%;max-width:280px;height:auto;margin:0 auto 18px;display:block}
+.pdlc-badge{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;padding:0 14px;border-radius:22px;font-size:11px;font-weight:700;letter-spacing:.08em;margin-bottom:22px}
+.pdlc-badge.is-off{background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.55);border:1px solid rgba(255,255,255,0.2)}
+.pdlc-badge.is-on{background:linear-gradient(120deg,var(--accent),var(--silver-lt));color:var(--ink)}
+.pdlc-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;margin-bottom:24px}
+.pdlc-legend span{display:flex;align-items:center;gap:6px;font-size:10.5px;color:rgba(255,255,255,0.45)}
+.pdlc-legend i{width:8px;height:8px;border-radius:2px;display:inline-block;flex-shrink:0}
+.pdlc-info{display:flex;align-items:flex-start;gap:14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:18px 20px;text-align:left}
+.pdlc-info svg{flex-shrink:0;margin-top:2px;color:var(--accent)}
+.pdlc-info-t{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;margin-bottom:4px}
+.pdlc-info-d{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.7}
+.pdlc-features{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid rgba(255,255,255,0.08);padding-top:40px}
+.pdlc-feature{text-align:center}
+.pdlc-feature svg{margin:0 auto 16px;display:block;color:var(--accent)}
+.pdlc-feature-t{font-size:14px;font-weight:700;color:#fff;margin-bottom:6px}
+.pdlc-feature-d{font-size:12.5px;color:rgba(255,255,255,0.45)}
+@media(max-width:860px){
+  .pdlc-cols{grid-template-columns:1fr}
+  .pdlc-features{grid-template-columns:1fr 1fr;row-gap:32px}
+}
+
 /* ---------- Footer ---------- */
 footer{background:var(--ink);padding:64px 56px 28px}
 .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
