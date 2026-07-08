@@ -161,6 +161,7 @@ section{padding:96px 56px}
    the other at the drag position, instead of clipping one single
    flattened image (which never actually revealed anything). */
 .slider-wrap{position:relative;width:100%;aspect-ratio:3/4;border:1px solid rgba(12,22,32,0.08);border-radius:var(--radius);overflow:hidden;cursor:ew-resize;touch-action:pan-y;background:var(--bone)}
+.slider-wrap.is-landscape{aspect-ratio:836/615}
 .slider-wrap .sl-before,.slider-wrap .sl-after{position:absolute;inset:0;background-repeat:no-repeat;background-size:200% 100%}
 .slider-wrap .sl-before{background-position:left top}
 .slider-wrap .sl-after{background-position:right top;clip-path:inset(0 0 0 50%);transition:clip-path .25s ease}
