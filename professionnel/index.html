@@ -37,10 +37,23 @@
   .hub-card h3{font-size:18px;margin-bottom:10px;color:#fff}
   .hub-card p{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.75;margin-bottom:14px}
   .hub-card .go{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--silver-lt);font-weight:700}
+  .vi{position:relative;width:100%;overflow:hidden;background:var(--ink);line-height:0;padding:0}
+  .vi video{display:block;width:100%;height:64vh;min-height:360px;max-height:600px;object-fit:cover}
+  .vi-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,22,32,0.05) 0%,rgba(12,22,32,0.05) 45%,rgba(12,22,32,0.85) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:56px}
+  .vi-tag{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--silver-lt);font-weight:600;margin-bottom:16px;line-height:normal}
+  .vi-title{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(24px,3vw,40px);color:#fff;max-width:640px;margin-bottom:28px;line-height:1.2}
+  .vi-title i{font-style:normal;color:var(--silver-lt)}
+  .vi-benefits{display:flex;gap:12px;flex-wrap:wrap;line-height:normal}
+  .vi-chip{display:flex;align-items:center;gap:9px;padding:11px 18px;background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.16);border-radius:30px;font-size:12px;color:#fff;font-weight:600}
+  .vi-chip-dot{width:6px;height:6px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--silver-lt),var(--accent));flex-shrink:0}
   @media(max-width:900px){
     .pro-hero{grid-template-columns:1fr;padding:110px 20px 52px;gap:36px}.pro-hero::after{display:none}
     .why-grid{grid-template-columns:1fr 1fr}
     .hub-grid{grid-template-columns:1fr}
+    .vi video{height:52vh}
+    .vi-overlay{padding:28px 20px}
+    .vi-benefits{gap:8px}
+    .vi-chip{padding:9px 14px;font-size:11px}
   }
 </style>
 </head>
@@ -76,6 +89,23 @@
     <div class="pro-stat"><b>100%</b><span>Conception &amp; découpe en France</span></div>
     <div class="pro-stat"><b>2 m</b><span>Largeur maximale de rouleau</span></div>
     <div class="pro-stat"><b>5 ans</b><span>Garantie fabricant sur le film</span></div>
+  </div>
+</section>
+
+<section class="vi">
+  <video id="vi-video-pro" src="/assets/video/demo-chantier-pro.mp4" poster="/assets/video/poster-chantier-pro.jpg" autoplay muted loop playsinline preload="metadata">
+    <source src="/assets/video/demo-chantier-pro.webm" type="video/webm">
+    <source src="/assets/video/demo-chantier-pro.mp4" type="video/mp4">
+  </video>
+  <button class="vi-toggle" type="button" aria-label="Mettre en pause la vidéo">⏸</button>
+  <div class="vi-overlay">
+    <span class="vi-tag">Chantier réel</span>
+    <h2 class="vi-title">Le film, <i>en conditions réelles.</i></h2>
+    <div class="vi-benefits">
+      <span class="vi-chip"><span class="vi-chip-dot"></span>Pose sur site</span>
+      <span class="vi-chip"><span class="vi-chip-dot"></span>Découpe sur-mesure</span>
+      <span class="vi-chip"><span class="vi-chip-dot"></span>Contrôle qualité systématique</span>
+    </div>
   </div>
 </section>
 
