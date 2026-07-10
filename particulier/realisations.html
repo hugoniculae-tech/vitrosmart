@@ -25,6 +25,7 @@
   .case-meta{display:flex;gap:24px;margin-top:20px}
   .case-meta div{font-size:12px;color:var(--muted-lt)}
   .case-meta b{display:block;color:var(--ink);font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:500}
+  .case-photo{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid rgba(12,22,32,0.08)}
   .case-video{position:relative;width:100%;aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;background:var(--ink)}
   .case-video.is-landscape{aspect-ratio:1042/654}
   .case-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -107,16 +108,7 @@
     </div>
 
     <div class="case">
-      <div class="slider-wrap is-landscape">
-        <div class="sl-before" style="background-image:url(/assets/img/espace-travail.jpg);background-position:right top">
-          <div class="sl-state sl-state-l"><b>ON</b><span>Vitrage transparent</span></div>
-        </div>
-        <div class="sl-after" style="background-image:url(/assets/img/espace-travail.jpg);background-position:left top">
-          <div class="sl-state sl-state-r"><b>OFF</b><span>Vitrage opaque</span></div>
-        </div>
-        <div class="sl-line"></div>
-        <span class="sl-tag sl-l">Transparent</span><span class="sl-tag sl-r">Opaque</span>
-      </div>
+      <img class="case-photo" src="/assets/img/espace-travail.jpg" alt="Espace de travail — vitrage opaque (OFF) et transparent (ON)" loading="lazy">
       <div>
         <span class="case-tag">Bureaux &amp; coworking</span>
         <h2>Espace de travail — confidentialité réunion à la demande</h2>
