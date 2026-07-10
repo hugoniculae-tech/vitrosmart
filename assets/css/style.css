@@ -176,7 +176,6 @@ section{padding:96px 56px}
 .sl-state span{display:block;text-transform:uppercase;font-weight:600;opacity:.9;letter-spacing:.13em;font-size:7px}
 .sl-state-l{left:5%}
 .sl-state-r{left:5%}
-.sl-mask{position:absolute;left:2%;bottom:17%;width:38%;height:18%;background:radial-gradient(ellipse at center,#141414 0%,#141414 68%,rgba(20,20,20,0) 100%);pointer-events:none}
 
 /* ---------- Forms ---------- */
 .site-form{position:relative;text-align:left;background:#fff;border:1px solid rgba(12,22,32,0.08);border-radius:var(--radius);padding:44px 40px 40px;box-shadow:var(--shadow-lg);overflow:hidden}
