@@ -27,6 +27,7 @@
   .p-badge-dot{width:5px;height:5px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--silver-lt),var(--accent))}
   .p-badge span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);font-weight:600}
   .rea-preview{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .case-photo{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid rgba(192,192,192,0.18)}
   .rea-card-link{display:block;text-decoration:none;color:inherit;margin-top:12px;font-size:13px}
   .rea-card-link:hover .n{color:var(--accent2)}
   .rea-card .n{font-weight:700;margin-bottom:2px;transition:color .2s}
@@ -284,16 +285,7 @@
         <a href="/particulier/realisations.html" class="rea-card-link"><span class="n">Cabinet médical</span><br><span class="s">Confidentialité patient</span></a>
       </div>
       <div class="rea-card">
-        <div class="slider-wrap is-landscape">
-          <div class="sl-before" style="background-image:url(/assets/img/espace-travail-slider.jpg)">
-            <div class="sl-state sl-state-l"><b>ON</b><span>Vitrage transparent</span></div>
-          </div>
-          <div class="sl-after" style="background-image:url(/assets/img/espace-travail-slider.jpg)">
-            <div class="sl-state sl-state-r"><b>OFF</b><span>Vitrage opaque</span></div>
-          </div>
-          <div class="sl-line"></div>
-          <span class="sl-tag sl-l">Transparent</span><span class="sl-tag sl-r">Opaque</span>
-        </div>
+        <img class="case-photo" src="/assets/img/espace-travail.jpg" alt="Espace de travail — vitrage opaque (OFF) et transparent (ON)" loading="lazy">
         <a href="/particulier/realisations.html" class="rea-card-link"><span class="n">Espace de travail</span><br><span class="s">Confidentialité réunion</span></a>
       </div>
       <div class="rea-card">
