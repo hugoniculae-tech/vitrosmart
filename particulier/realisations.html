@@ -26,6 +26,12 @@
   .case-meta div{font-size:12px;color:var(--muted-lt)}
   .case-meta b{display:block;color:var(--ink);font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:500}
   .case-photo{width:100%;height:auto;display:block;border-radius:var(--radius);border:1px solid rgba(12,22,32,0.08)}
+  .case-photo-wrap{position:relative}
+  .case-photo-tag{position:absolute;bottom:6%;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,0.5);pointer-events:none}
+  .case-photo-tag b{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;line-height:1;font-size:24px;margin-bottom:9px}
+  .case-photo-tag span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:600;opacity:.9}
+  .case-photo-tag-l{left:5%}
+  .case-photo-tag-r{right:5%;text-align:right}
   .case-video{position:relative;width:100%;aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;background:var(--ink)}
   .case-video.is-landscape{aspect-ratio:1042/654}
   .case-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -108,7 +114,11 @@
     </div>
 
     <div class="case">
-      <img class="case-photo" src="/assets/img/espace-travail.jpg" alt="Espace de travail — vitrage opaque (OFF) et transparent (ON)" loading="lazy">
+      <div class="case-photo-wrap">
+        <img class="case-photo" src="/assets/img/espace-travail.jpg" alt="Espace de travail — vitrage opaque (OFF) et transparent (ON)" loading="lazy">
+        <div class="case-photo-tag case-photo-tag-l"><b>OFF</b><span>Vitrage opaque</span></div>
+        <div class="case-photo-tag case-photo-tag-r"><b>ON</b><span>Vitrage transparent</span></div>
+      </div>
       <div>
         <span class="case-tag">Bureaux &amp; coworking</span>
         <h2>Espace de travail — confidentialité réunion à la demande</h2>
